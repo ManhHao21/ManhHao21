@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.containner {
+    display: flex;
+    flex-direction: column;
+}
+
+.containner #full {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+   
+}
+.containner #full #btn{
+    margin: 0px 30px 0px 0px ;
+ }
+
+ .containner #full #btn button{
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 0px 20px;
+ }
+.list {
+    display: flex;
+    flex-direction: column; 
+    width: 700px;
+    margin-left: 20px;
+}
+.list .box{
+    display: flex;
+    width:700px;
+}
+
+.list .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.list  div {
+    display: flex;
+}
+.list  div span{
+    margin-right: 30px;
+}
+.list  div input  {
+    flex-grow: 1;
+}
+.list .box input{
+    width: 200px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+
+.tb table {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th, td {
+    height: 50px;
+}
+
+@media only screen and (max-width:1000px){
+    .list {
+        display: flex;
+        flex-direction: column; 
+        width: 400px;
+        margin-left: 20px;
+    }
+    .list .box {
+        flex-direction: column;
+        width: 400px;
+    }
+    .list .box div:first-child{
+       margin-bottom: 20px;
+    }
+    .list .box input{
+        flex-grow: 1;
+    }
+    .list span {
+        margin-right: 20px;
+    }
+
+    .tb table {
+        width: 800px;
+    }
+
+    .tb table th, td{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:804px){
+   
+    .tb table {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:566px){ 
+   .containner #full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+   }
+   #title h4 {
+    text-align: center;
+    font-size: 15px;
+   }
+   .tb table {
+    width: 400px;
+   }
+   .list {
+    width: 300px;
+    }
+    .list span {
+        font-size: 10px;
+    }
+   .list .box {
+    width: 300px;
+    }
+}
+
+
+@media only screen and (max-width:403px){ 
+    #title h4 {
+     text-align: center;
+     font-size: 15px;
+    }
+    .tb table {
+     width: 300px;
+    }
+    .list {
+     width: 250px;
+     }
+     .list span {
+         font-size: 8px;
+     }
+    .list .box {
+     width: 250px;
+     }
+ }
+
